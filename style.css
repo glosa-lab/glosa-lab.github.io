@@ -2,12 +2,17 @@
    ESTÉTICA TECH MINIMALISTA (.glosa)
    ========================================== */
 
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 body { 
     font-family: "Courier New", Courier, monospace; 
     background-color: #fdfdfd; 
-    color: #1a1a1a;
-    padding: 0 8vw 0 8vw;
-    margin: 0; 
+    color: #1a1a1a; 
+    /* Zero no topo e fundo, 8vw nas laterais */
+    padding: 0 8vw 0 8vw; 
     line-height: 1.5;
 }
 
@@ -27,6 +32,8 @@ main {
     gap: 30px;           
     margin-bottom: 4rem;
     flex-wrap: nowrap;
+    /* Adiciona um pequeno respiro interno no topo para não colar totalmente */
+    padding-top: 2rem; 
 }
 
 /* Garante que o link da imagem não quebre o flex */
@@ -37,7 +44,7 @@ main {
 }
 
 .header-icon {
-    width: 220px; /* Tamanho substancial mantido */
+    width: 220px; 
     height: auto;
     display: block;
     flex-shrink: 0;
@@ -52,7 +59,7 @@ h1 {
 }
 
 /* ==========================================
-   METADADOS E NAVEGAÇÃO
+   METADADOS E NAVEGAÇÃO (MENU HORIZONTAL)
    ========================================== */
 
 .metadata { 
@@ -64,15 +71,17 @@ h1 {
 
 nav {
     margin-bottom: 4rem;
+    display: flex;       /* Alinha links em linha */
+    flex-wrap: wrap;     /* Quebra linha em telas pequenas */
+    gap: 2rem;           /* Espaço entre os links */
 }
 
 nav a { 
-    display: block; 
+    display: inline-block; 
     color: #1a1a1a; 
     text-decoration: none; 
-    margin-bottom: 0.8rem; 
-    width: fit-content;
     font-size: 0.9rem;
+    width: fit-content;
 }
 
 nav a:hover { 
@@ -124,21 +133,31 @@ nav a:hover {
 }
 
 /* ==========================================
-   PRODUÇÃO TÉCNICA (DASHBOARDS)
+   PRODUÇÃO TÉCNICA E STACK
    ========================================== */
 
-.dashboard-container {
-    position: relative;
-    width: 100%;
-    padding-top: 56.25%; /* Proporção 16:9 */
-    margin-top: 1rem;
-    border: 1px solid #ddd;
+.project-entry h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
 }
 
-.dashboard-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.project-entry h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.tech-stack {
+    margin-top: 2rem;
+}
+
+.tech-stack ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Estilo para links de ação/dashboard */
+nav a[href*="lookerstudio"] {
+    font-weight: bold;
+    text-decoration: underline;
 }
