@@ -6,7 +6,7 @@ body {
     font-family: "Courier New", Courier, monospace; 
     background-color: #fdfdfd; 
     color: #1a1a1a;
-    padding: 0 8vw 8vw 8vw; 
+    padding: 0 8vw 0 8vw;
     margin: 0; 
     line-height: 1.5;
 }
