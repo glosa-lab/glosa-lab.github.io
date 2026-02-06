@@ -12,10 +12,26 @@ main {
     max-width: 600px; 
 }
 
+/* Container do Cabeçalho (Alinha imagem e h1) */
+.site-header {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espaço entre a árvore e o texto */
+    margin-bottom: 2.5rem;
+}
+
+/* Ícone da Árvore */
+.header-icon {
+    width: 60px; /* Ajuste o tamanho conforme achar melhor */
+    height: auto;
+    display: block;
+}
+
+/* Ajuste no H1 para alinhar corretamente */
 h1 { 
     font-size: 1.1rem; 
     font-weight: normal; 
-    margin-bottom: 2.5rem; 
+    margin: 0; /* Removida a margem para não quebrar o flexbox */
     letter-spacing: -0.5px;
 }
 
@@ -41,10 +57,11 @@ nav a:hover {
     padding: 0 4px;
 }
 
+/* Classe antiga (opcional manter para outras imagens no futuro) */
 .header-image {
-    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
-    height: auto;    /* Mantém a proporção da imagem */
-    display: block;  /* Remove espaços indesejados abaixo da imagem */
-    margin: 2.5rem 0 4rem 0; /* Espaçamento: top, right, bottom, left */
-    border: 1px solid #ddd; /* Borda sutil para dar um ar de "item de arquivo" */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 2.5rem 0 4rem 0;
+    border: 1px solid #ddd;
 }
