@@ -1,37 +1,39 @@
 ---
 layout: default
-title: Produção Técnica
+title: .produção técnica
 ---
 
-<section class="tech-section">
-    <h2>// interface_de_pesquisa</h2>
-    
-    <div class="project-card">
+<h1>// {{ page.title | downcase }}</h1>
+
+<section class="project-entry" style="margin-top: 2rem;">
+    <header>
         <h3>[Dashboard] Busca no Dicionário Informal – Dez/2025</h3>
-        
+    </header>
+    
+    <article>
         <p>Interface interativa projetada para facilitar a coleta de dados do Dicionário Informal para fins de pesquisa linguística. O sistema permite a exploração da base de dados através de parâmetros variados, otimizando a identificação de padrões morfológicos e a exportação direta dos dados filtrados em formato de planilha.</p>
         
-        <ul class="metadata" style="margin-bottom: 1.5rem; list-style: none; padding: 0; font-size: 0.85rem; color: #666;">
+        <ul class="metadata" style="margin: 1.5rem 0; list-style: none; padding: 0; font-size: 0.85rem; color: #666;">
             <li><strong>// data_de_lançamento:</strong> Dezembro de 2025</li>
-            <li><strong>// autoria_scripts:</strong> Amanda Gouveia (script de extração de dados via Python).</li>
-            <li><strong>// desenvolvimento_interface:</strong> Evelini Andrade (estruturação da base de dados, lógica de filtros parametrizados e design do dashboard no Looker Studio).</li>
-            <li><strong>// funcionalidade:</strong> Busca dinâmica + Exportação de dados (planilhas).</li>
+            <li><strong>// autoria_scripts:</strong> Amanda Gouveia (extração de dados via Python).</li>
+            <li><strong>// desenvolvimento_interface:</strong> Estruturação da base de dados e design no Looker Studio (Glosa).</li>
         </ul>
 
-        <nav>
+        <nav style="margin-top: 1.5rem;">
             <a href="https://lookerstudio.google.com/reporting/54cf66a0-f1c3-415a-9ac5-09d0244ba27f" target="_blank" style="font-weight: bold; text-decoration: underline;">
                 /acessar_dashboard_no_looker_studio ↗
             </a>
         </nav>
-    </div>
+    </article>
 </section>
 
-<section class="tech-section" style="margin-top: 4rem;">
-    <h2>// ferramentas_utilizadas</h2>
-    <p>Recursos técnicos empregados na viabilização desta interface e na gestão dos dados linguísticos.</p>
-    
-    <ul class="resource-list">
-        <li><strong>Google Sheets:</strong> Estruturação e tratamento da base de dados bruta para consumo do dashboard.</li>
-        <li><strong>Looker Studio:</strong> Camada de visualização e ferramentas de filtragem de dados.</li>
+<hr style="border: 0; border-top: 1px dashed #ddd; margin: 4rem 0;">
+
+<section class="tech-stack">
+    <small style="color: #999; text-transform: uppercase;">Stack Tecnológica</small>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; font-size: 0.9rem;">
+        <li><strong>Google Sheets:</strong> Engine de armazenamento e pré-processamento dos dados.</li>
+        <li><strong>Looker Studio:</strong> Camada de BI utilizada para a construção dos filtros e interface de usuário.</li>
+        <li><strong>Python:</strong> Linguagem utilizada na etapa de scraping/extração por Amanda Gouveia.</li>
     </ul>
 </section>
