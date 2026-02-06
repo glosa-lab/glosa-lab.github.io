@@ -1,0 +1,2 @@
+# glosa
+Surtos linguísticos
