@@ -12,29 +12,30 @@ main {
     max-width: 600px; 
 }
 
-/* Container do Cabeçalho (Alinha imagem e h1) */
+/* Container do Cabeçalho - Alinha imagem à esquerda e título ao lado */
 .site-header {
     display: flex;
-    align-items: center;
-    gap: 15px; /* Espaço entre a árvore e o texto */
+    align-items: center; /* Centraliza verticalmente a árvore com o texto */
+    gap: 15px;           /* Espaço entre a imagem e o título */
     margin-bottom: 2.5rem;
 }
 
-/* Ícone da Árvore */
+/* Controle da Imagem do Header (Ícone) */
 .header-icon {
-    width: 60px; /* Ajuste o tamanho conforme achar melhor */
+    width: 45px;         /* Tamanho controlado para não ficar gigante */
     height: auto;
     display: block;
 }
 
-/* Ajuste no H1 para alinhar corretamente */
+/* Ajuste do Título H1 */
 h1 { 
     font-size: 1.1rem; 
     font-weight: normal; 
-    margin: 0; /* Removida a margem para não quebrar o flexbox */
+    margin: 0;           /* Removida margem para alinhar com o flexbox */
     letter-spacing: -0.5px;
 }
 
+/* Metadados (Comentários de código) */
 .metadata { 
     color: #999; 
     font-size: 0.8rem; 
@@ -42,6 +43,7 @@ h1 {
     line-height: 1.4; 
 }
 
+/* Navegação e Links */
 nav a { 
     display: block; 
     color: #1a1a1a; 
@@ -57,7 +59,7 @@ nav a:hover {
     padding: 0 4px;
 }
 
-/* Classe antiga (opcional manter para outras imagens no futuro) */
+/* Estilo para imagens grandes de conteúdo (se houver) */
 .header-image {
     max-width: 100%;
     height: auto;
