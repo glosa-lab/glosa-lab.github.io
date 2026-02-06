@@ -9,33 +9,33 @@ body {
 }
 
 main { 
-    max-width: 600px; 
+    max-width: 900px; 
 }
 
-/* Container do Cabeçalho - Alinha imagem à esquerda e título ao lado */
+/* Container do Cabeçalho */
 .site-header {
     display: flex;
-    align-items: center; /* Mantém o texto centralizado com a altura da imagem */
-    gap: 20px;           /* Espaço entre a imagem e o título */
-    margin-bottom: 3rem;
+    align-items: center; 
+    gap: 30px;           
+    margin-bottom: 4rem;
 }
 
-/* Controle da Imagem do Header (Ícone) */
+/* Controle da Imagem - Agora com a cor de fundo correta */
 .header-icon {
-    width: 80px;         /* Aumentado de 45px para 80px */
+    width: 220px; /* Tamanho substancial como você pediu */
     height: auto;
     display: block;
+    /* Removido o mix-blend-mode pois a cor agora é idêntica ao fundo */
 }
 
-/* Ajuste do Título H1 */
+/* Título */
 h1 { 
-    font-size: 1.1rem; 
+    font-size: 1.3rem;
     font-weight: normal; 
     margin: 0;           
     letter-spacing: -0.5px;
 }
 
-/* Metadados (Comentários de código) */
 .metadata { 
     color: #999; 
     font-size: 0.8rem; 
@@ -43,7 +43,6 @@ h1 {
     line-height: 1.4; 
 }
 
-/* Navegação e Links */
 nav a { 
     display: block; 
     color: #1a1a1a; 
@@ -59,10 +58,10 @@ nav a:hover {
     padding: 0 4px;
 }
 
-/* Estilo para imagens grandes de conteúdo (se houver) */
-.header-icon {
-    width: 180px;         
+.header-image {
+    max-width: 100%;
     height: auto;
     display: block;
-    mix-blend-mode: multiply; 
+    margin: 2.5rem 0 4rem 0;
+    border: 1px solid #ddd;
 }
