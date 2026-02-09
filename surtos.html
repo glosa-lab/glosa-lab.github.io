@@ -27,7 +27,11 @@ permalink: /surtos
                             > {{ post.title | downcase }}
                         </a>
                         <div class="post-excerpt">
-                            {{ post.excerpt | strip_html | truncatewords: 25 }}
+                            {% if post.excerpt %}
+                                {{ post.excerpt | strip_html | truncatewords: 25 }}
+                            {% else %}
+                                {{ post.content | strip_html | truncatewords: 25 }}
+                            {% endif %}
                         </div>
                     </td>
                     <td class="post-tags">
