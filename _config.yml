@@ -1,6 +1,9 @@
-title: Glosa Lab
+title: .glosa lab
 url: "https://glosa-lab.github.io"
 baseurl: ""
+
+# Configuração de Resumos
+excerpt_separator: ""
 
 # Como você está criando o tema, garanta que o Jekyll ignore o que não deve
 exclude:
