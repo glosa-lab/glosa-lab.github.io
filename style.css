@@ -23,25 +23,16 @@ main {
 }
 
 /* ==========================================
-   ESTILO DO LOG (POSTS INTERNOS)
-   ========================================== */
+   TÍTULO DO POST (ESTILO .GLOSA)
+   ========================================= */
 
 .post-title-main {
-    font-size: 1.5rem;
+    font-size: 1.3rem; /* Mesma escala do header principal */
     font-weight: bold;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-    letter-spacing: -1px;
+    margin: 0 0 1rem 0;
+    letter-spacing: -0.5px;
     display: block;
     color: #1a1a1a;
-}
-
-.post-metadata {
-    color: #999;
-    font-size: 0.8rem;
-    margin-bottom: 3rem;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 1rem;
 }
 
 .post-body h3 {
@@ -50,34 +41,17 @@ main {
     display: inline-block;
     padding: 2px 8px;
     font-size: 1rem;
-    margin: 2rem 0 1rem 0;
+    margin: 1.5rem 0 0.5rem 0;
     font-weight: normal;
 }
 
-.post-footer {
-    margin-top: 5rem;
-    opacity: 0.4;
-    font-size: 0.8rem;
-    line-height: 1.2;
-}
-
 /* ==========================================
-   LINKS DE CONTEÚDO (Geral)
+   LINKS
    ========================================== */
 
-article a, 
-article a:visited,
-.page-content a,
-.page-content a:visited {
+article a, .page-content a {
     color: #1a1a1a;
     text-decoration: underline;
-}
-
-article a:hover,
-.page-content a:hover {
-    color: #551a8b;
-    text-decoration: underline;
-    background-color: transparent;
 }
 
 /* ==========================================
@@ -89,15 +63,13 @@ article a:hover,
     flex-direction: row;
     align-items: center; 
     gap: 30px;           
-    margin-bottom: 4rem;
-    flex-wrap: nowrap;
+    margin-bottom: 2rem;
     padding-top: 2rem; 
 }
 
 .header-icon {
     width: 220px; 
     height: auto;
-    display: block;
     flex-shrink: 0;
 }
 
@@ -106,65 +78,30 @@ h1 {
     font-weight: normal; 
     margin: 0;           
     letter-spacing: -0.5px;
-    color: #1a1a1a;
 }
 
 /* ==========================================
-   NAVEGAÇÃO GLOBAL (Menus e Footer)
+   NAVEGAÇÃO E RODAPÉ
    ========================================== */
 
 nav, footer nav {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     display: flex; 
-    flex-wrap: wrap; 
     gap: 2rem; 
 }
 
 nav a, footer a { 
-    display: inline-block; 
     color: #1a1a1a; 
     text-decoration: none; 
     font-size: 0.9rem;
 }
 
-nav a:hover, footer a:hover { 
+nav a:hover { 
     background-color: #1a1a1a; 
     color: #fdfdfd; 
-    padding: 0 4px;
 }
-
-/* ==========================================
-   RODAPÉ (ESTRUTURA)
-   ========================================== */
 
 footer {
-    margin-top: 5rem;
-    padding-bottom: 4rem;
-    border-top: 1px dashed #444;
-    padding-top: 2rem;
+    margin-top: 3rem;
+    padding-bottom: 2rem;
 }
-
-/* ==========================================
-   PÁGINA .SURTOS (LOG DE POSTS)
-   ========================================== */
-
-.log-posts table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 2rem;
-}
-
-.log-posts th {
-    color: #999;
-    font-size: 0.8rem;
-    font-weight: normal;
-    text-align: left;
-    padding: 10px;
-    border-bottom: 1px solid #1a1a1a;
-}
-
-.log-posts tr {
-    border-bottom: 1px solid #eee;
-}
-
-.log-posts td {
