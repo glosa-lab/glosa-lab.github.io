@@ -3,7 +3,7 @@ url: "https://glosa-lab.github.io"
 baseurl: ""
 
 # Configuração de Resumos
-excerpt_separator: ""
+excerpt_separator: "<!--mais-->"
 
 # Como você está criando o tema, garanta que o Jekyll ignore o que não deve
 exclude:
