@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<article class="post-content">
+    <header class="post-header">
+        <h1 class="post-title-main" style="font-size: 2rem; font-weight: bold; margin-bottom: 0.5rem;">
+            // {{ page.title | downcase }}
+        </h1>
+        
+        <div class="post-metadata" style="color: #999; font-size: 0.8rem; margin-bottom: 2rem; border-bottom: 1px solid #eee; padding-bottom: 1rem;">
+            [data: {{ page.date | date: "%d-%m-%y" }}] 
+            {% if page.tags.size > 0 %}
+                [tags: {{ page.tags | join: ", " | downcase }}]
+            {% endif %}
+        </div>
+    </header>
+
+    <div class="entry-content">
+        {{ content }}
+    </div>
+
+    <footer class="post-footer" style="margin-top: 5rem; opacity: 0.4; font-size: 0.8rem;">
+        <p>---<br>EOL (end of line) // log_closed</p>
+    </footer>
+</article>
