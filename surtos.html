@@ -11,26 +11,26 @@ permalink: /surtos
         <table>
             <thead>
                 <tr>
-                    <th style="width: 120px;">[data]</th>
-                    <th>[entrada]</th>
-                    <th style="width: 150px; text-align: right;">[tags]</th>
+                    <th class="col-date">[data]</th>
+                    <th class="col-entry">[entrada]</th>
+                    <th class="col-tags">[tags]</th>
                 </tr>
             </thead>
             <tbody>
                 {% for post in site.posts %}
                 <tr>
-                    <td class="post-date" style="vertical-align: top;">
+                    <td class="post-date">
                         {{ post.date | date: "%Y-%m-%d" }}
                     </td>
-                    <td>
-                        <a href="{{ post.url }}" class="post-title">
+                    <td class="post-content">
+                        <a href=".{{ post.url }}" class="post-title">
                             > {{ post.title | downcase }}
                         </a>
-                        <div class="post-excerpt" style="margin-top: 5px; color: #666; font-size: 0.85rem; line-height: 1.4;">
+                        <div class="post-excerpt">
                             {{ post.excerpt | strip_html | truncatewords: 25 }}
                         </div>
                     </td>
-                    <td class="post-tags" style="vertical-align: top; text-align: right;">
+                    <td class="post-tags">
                         {% if post.tags.size > 0 %}
                             {% for tag in post.tags %}
                                 [{{ tag | downcase }}]{% unless forloop.last %} {% endunless %}
