@@ -7,7 +7,7 @@ tags: [surtos]
 # YYYY-MM-DD-nome-do-post.md (ex: 2026-02-06-analise-morfemas.md)
 ---
 
-Aqui estou eu testando o site, né? Disse que não ia *mais* fazer **isso**, porque dá dor de cabeça, mas... mesmo que ninguém leia... não consigo. Não consigo me comunicar. Os pensamentos são muitos, muito grandes, para guardar.
+Aqui estou eu testando o site, né? Disse que não ia *mais* fazer **isso**, porque dá dor de cabeça, mas... mesmo que ninguém leia... não consigo. Não consigo *não* me comunicar. Os pensamentos são muitos, muito grandes, para guardar.
 
 Então aqui estão.
 
