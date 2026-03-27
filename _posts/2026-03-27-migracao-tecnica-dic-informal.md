@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Migração Técnica: Do Looker Studio ao Streamlit"
-date: 2026-03-26
+date: 2026-03-27
 categories: linguistica-computacional, morfologia
 tags: [streamlit, python, regex, morfologia, gremd-usp, nlp]
 ---
