@@ -2,7 +2,8 @@
 layout: post
 title: "Migração Técnica: Do Looker Studio ao Streamlit"
 date: 2026-03-26
-categories: linguistica-computacional
+categories: linguistica-computacional, morfologia
+tags: [streamlit, python, regex, morfologia, gremd-usp, nlp]
 ---
 
 Exploro aqui a transição do dashboard de busca do Dicionário Informal de uma solução "no-code" (Looker Studio) para uma arquitetura personalizada em Python com Streamlit.
